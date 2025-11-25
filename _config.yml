@@ -1,16 +1,16 @@
 # Site settings
-title:          Nhat Bui
+title:          Nhatism
 description:    ""
 baseurl:        "/blog"
-url:            "https://vitaminhat.github.io"
+url:            "https://nhatism.github.io"
 
 # Google Analytics
 google_analytics: G-9Z1M9Z715L
 
 # Author
 author:
-  name:         Nhat Bui
-  url:          https://vitaminhat.github.io
+  name:         Nhatism
+  url:          https://nhatism.github.io
   email:        
 
 # Build settings
