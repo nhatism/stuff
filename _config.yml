@@ -40,9 +40,6 @@ paginate:       7
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
-# Disqus (Set to your disqus id)
-# disqus:
-
 
 remote_theme: chesterhow/tale
 

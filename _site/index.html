@@ -4,21 +4,41 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'G-9Z1M9Z715L', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z1M9Z715L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9Z1M9Z715L');
+</script>
+
+
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Blog | Nhat Bui</title>
+<title>Blogz | Nhatism</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Blog" />
-<meta name="author" content="Nhat Bui" />
+<meta property="og:title" content="Blogz" />
+<meta name="author" content="Nhatism" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/blog/" />
 <meta property="og:url" content="http://localhost:4000/blog/" />
-<meta property="og:site_name" content="Nhat Bui" />
+<meta property="og:site_name" content="Nhatism" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Blog" />
+<meta property="twitter:title" content="Blogz" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Nhat Bui","url":"https://vitaminhat.github.io"},"headline":"Blog","name":"Nhat Bui","url":"http://localhost:4000/blog/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Nhatism","url":"https://nhatism.github.io"},"headline":"Blogz","name":"Nhatism","url":"http://localhost:4000/blog/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -39,11 +59,11 @@
     <nav class="nav">
   <div class="nav-container">
     <a href="/blog/">
-      <h2 class="nav-title"> <img src="https://github.com/vitaminhat/vitaminhat.github.io/raw/refs/heads/main/img/essential/fav.ico" alt="" class="favicon">nhật</h2>
+      <h2 class="nav-title"> <img src="https://github.com/nhatism/nhatism.github.io/raw/refs/heads/main/img/essential/fav.ico" alt="" class="favicon">nhatism</h2>
     </a>
     <ul>
       <li><a href="/blog/tags">Tags</a></li>
-      <li><a href="https://vitaminhat.github.io/">Homepage</a></li>
+      <li><a href="https://nhatism.github.io/">Homepage</a></li>
     </ul>
   </div>
 </nav>
@@ -86,112 +106,8 @@
 
     <footer>
 	<small>
-		<p align="center">
-			Nếu thích những gì tôi viết, hãy mua hoặc tặng 20.000 cho một người bán dạo mà bạn gặp trên đường hôm nay
-		</p>
-	</small>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://malsup.github.io/jquery.form.js"></script>
-	<script>
-		// wait for the DOM to be loaded 
-		$(document).ready(function () {
-			// bind 'myForm' and provide a simple callback function 
-			$('#subscription').ajaxForm(function () {
-				alert("Đăng ký thành công ^^");
-			});
-		});
-	</script>
-	<style>
-		.subscription-box {
-			margin: 20px auto;
-			width: 400px;
-		}
-
-		form {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.input-container {
-			display: flex;
-			align-items: center;
-			width: 100%;
-			position: relative;
-			border: 1px solid #ccc;
-			border-radius: 30px;
-			overflow: hidden;
-			background-color: white;
-		}
-
-		input[type="email"] {
-			font-family: Milan,sans-serif;
-			flex-grow: 1;
-			padding: 10px;
-			border: none;
-			outline: none;
-			font-size: 16px;
-			border-radius: 30px;
-			color: #111;
-		}
-
-		button {
-			font-family: Milan,sans-serif;
-			position: absolute;
-			right: 0;
-			height: 100%;
-			padding: 0 20px;
-			background-color: #353535;
-			border: none;
-			border-radius: 30px;
-			color: white;
-			font-size: 16px;
-			cursor: pointer;
-			top: 0;
-		}
-
-		button:hover {
-			background-color: #757575;
-		}
-
-
-		@media only screen and (max-width: 480px) {
-			h1 {
-				font-size: 40px;
-			}
-
-			.subscription-box {
-				width: 94%;
-				max-width: 600px;
-				display: block;
-				padding: 10px;
-				font-size: 20px;
-			}
-		}
-	</style>
-
-
-	<div class="subscription-box">
-		<form id="subscription"
-			action="https://script.google.com/macros/s/AKfycbwOLBIcuzWE8t77bd3tRzLpJbhwI0Q875bf42mKWJ1mwyYL4DTZS3vt0Y4afNG348En/exec"
-			method="POST">
-			<div class="input-container">
-				<input type="email" name="Email" placeholder="Enter your email" required>
-				<button type="submit" id="submit">Subscribe</button>
-			</div>
-		</form>
-	</div>
-
-	<small>
 		<p align="center" style="color: #757575;">
-			Please wait a few seconds after submitting.<br />My server is old and slow.
-		</p>
-	</small>
-	<br />
-	<small>
-		<p align="center" style="color: #757575;">
-			Copyright &#169; 2025 Nhat Bui
+			Copyright &#169; 2026 Nhatism
 		</p>
 	</small>
 </footer>
