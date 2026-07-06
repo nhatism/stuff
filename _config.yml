@@ -4,8 +4,6 @@ description:    ""
 baseurl:        "/blog"
 url:            "https://nhatism.github.io"
 
-# Google Analytics
-google_analytics: G-9Z1M9Z715L
 
 # Author
 author:
@@ -35,7 +33,7 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       7
+paginate:       10
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]

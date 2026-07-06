@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 720px;
   width: 88%;
 }
 
@@ -9,7 +9,7 @@ footer,
 .nav-container {
   display: block;
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 720px;
   width: 88%;
 }
 
@@ -23,6 +23,7 @@ footer,
 
 .nav {
   overflow: auto;
+  letter-spacing: 0.05em;
 
   &-container {
     margin: 2rem auto;

@@ -1,21 +1,21 @@
 // Colors
-$default-color: #111111 !default;
+$default-color: #222 !default;
 $default-shade: #353535 !default;
 $default-tint: #e5e5e5 !default;
-$grey-1: #757575 !default;
-$grey-2: #e5e5e5 !default;
-$grey-3: #f9f9f9 !default;
+$grey-1: #666 !default;
+$grey-2: #ddd !default;
+$grey-3: #f4f4f4 !default;
 $white: #fff !default;
 $blue: #4a9ae1 !default;
 $shadow-color: rgba(0, 0, 0, .2) !default;
-$code-color: #bf616a !default;
-$my-red: #DB0042 !default;
+$code-color: #d14 !default;
+$my-red: #222 !default; // Simplified heading color
 $my-purple: #6b46fe !default;
 
 // Fonts
-$serif: Petrona, Arial, serif, !default;
-$sans-serif: Milan, Arial, sans-serif !default;
-$monospaced: DMMono, monospace !default;
+$serif: "Inter", serif !default;
+$sans-serif: "Inter", sans-serif !default;
+$monospaced: "DMMono", monospace !default;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;

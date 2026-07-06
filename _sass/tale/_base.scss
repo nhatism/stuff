@@ -1,6 +1,6 @@
 * {
   @include box-sizing;
-  line-height: 1.45;
+  line-height: 1.55;
 }
 
 html,
@@ -14,7 +14,6 @@ html { /* phone */
   font-family: $serif;
   font-size: 18px;
   overflow-y: scroll;
-  font-variant-numeric: oldstyle-nums;
   hyphens: auto;
   
   @media (min-width: 600px) {  /* desktop */
@@ -28,11 +27,8 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-h2 {
-	color: $my-red;
-}
-
 h1,
+h2,
 h3,
 h4,
 h5,
@@ -40,38 +36,30 @@ h6 {
   color: $default-color;
   font-family: $serif;
   line-height: normal;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
  
 .post h1 { /* hero text */
 	text-align: center;
-	&:before {
-		content: open-quote;
-	}
-	&:after {
-		content: close-quote;
-	}
 }
 
 
 a {
-  color: $grey-1;
+  color: $default-color;
   text-decoration: none;
 }
 
 blockquote {
   font-style: italic;
-  border-left: .25rem solid $grey-2;
+  border-left: none;
+  padding-left: 2em;
   color: $grey-1;
-  margin: .8rem 0;
-  padding: .5rem 1rem;
+  margin: 1.5rem 0;
 
   p:last-child {
     margin-bottom: 0;
-  }
-
-  @media (min-width: 600px) {
-    padding: 0 5rem 0 1.25rem;
   }
 }
 
