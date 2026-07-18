@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 720px;
   width: 90%;
 
   @media (min-width: 600px) {
@@ -9,11 +9,10 @@
 }
 
 main,
-footer,
 .nav-container {
   display: block;
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 720px;
   width: 90%;
 
   @media (min-width: 600px) {
@@ -22,8 +21,8 @@ footer,
 }
 
 .favicon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   margin-right: 0.5rem;
   margin-top: auto;
   margin-bottom: auto;
@@ -35,50 +34,55 @@ footer,
 
   &-container {
     margin: 2rem auto;
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &-title {
-    font-size: 20px;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-family: "DMMono", monospace;
     display: flex;
+    align-items: center;
     margin: 0;
     padding-right: .2rem;
-    font-family: $monospaced;
-    font-weight: 500;
+    letter-spacing: normal;
   }
 
   ul {
     list-style-type: none;
-    margin: 1rem 0 0;
+    margin: 0;
     padding: 0;
-    text-align: center;
     font-family: $monospaced;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   li {
-    @include transition(all .2s ease-out);
     font-weight: bold;
     font-size: 0.8em;
     text-transform: uppercase;
     color: $default-color;
-    display: inline-block;
-    padding: 0 2rem 0 0;
+    padding: 0;
     font-family: $monospaced;
-
-    &:last-child {
-      padding-right: 0;
-    }
-
   }
 
   a {
-    @include transition(all .2s ease-out);
-    color: $grey-1;
+    color: $blue;
     font-family: $monospaced;
     font-weight: 500;
+    &:visited {
+      color: $blue;
+    }
     &:hover,
     &:focus {
-      color: $my-purple;
+      color: $blue;
+      text-decoration: underline;
+    }
+    &:active {
+      color: $active;
     }
   }
   
@@ -89,22 +93,65 @@ footer,
     &-container {
       text-align: left;
     }
-
-    ul {
-      bottom: 0;
-      position: absolute;
-      right: 0;
-    }
   }
 }
 
 footer {
   font-family: $sans-serif;
   padding: 2rem 0;
-  text-align: center;
+  width: 100%;
+  border-top: .5px solid $grey-2;
+}
 
-  span {
-    color: $default-color;
-    font-size: .8rem;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 720px;
+  width: 90%;
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: end;
+    text-align: left;
+    width: 88%;
+    max-width: 100%;
+  }
+}
+
+.footer-copyright {
+  order: 2;
+  margin: 0;
+  @media (min-width: 600px) {
+    grid-column: 1;
+    grid-row: 2;
+    order: unset;
+  }
+}
+
+.footer-support {
+  order: 1;
+  margin: 0 0 0.5rem 0;
+  @media (min-width: 600px) {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+    margin: 0 0 0.5rem 0;
+    order: unset;
+  }
+}
+
+.footer-license {
+  order: 3;
+  margin: 0;
+  @media (min-width: 600px) {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+    order: unset;
   }
 }

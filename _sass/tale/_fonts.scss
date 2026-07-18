@@ -1,22 +1,38 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('/blog/assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-family: 'TeX Gyre Pagella';
+  src: url('/stuff/assets/fonts/texgyrepagella-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/blog/assets/fonts/Inter-Bold.ttf') format('truetype');
+  font-family: 'TeX Gyre Pagella';
+  src: url('/stuff/assets/fonts/texgyrepagella-italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('/stuff/assets/fonts/texgyrepagella-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('/stuff/assets/fonts/texgyrepagella-bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'DMMono';
-  src: url('/blog/assets/fonts/DMMono-Medium.ttf') format('truetype');
+  src: url('/stuff/assets/fonts/DMMono-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;

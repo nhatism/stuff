@@ -1,5 +1,5 @@
 .pagination {
-  border-top: .5px solid $grey-2;
+  border-top: none;
   font-family: $sans-serif;
   padding-top: 2rem;
   position: relative;
@@ -19,14 +19,12 @@
 
     &:hover {
       opacity: 1;
-      transition: color 0.3s ease;
     }
 
     &::after {
       content: " ↑";  /* Arrow character */
       position: relative;
       left: 0;
-      transition: bottom 0.3s ease;  /* Moves the arrow on hover */
     }
 
     &:hover::after {

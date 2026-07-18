@@ -16,16 +16,21 @@
 
     a {
       display: inline-block;
-      margin: 0 0.1rem 0.2rem;
-      padding: 0.2rem 0.5rem;
-      background: rgba(0, 0, 0, 0.05);
-      border-radius: 5px;
-      color: $default-color;
+      margin: 0 0.4rem;
+      color: $blue;
       text-decoration: none;
 
+      &:visited {
+        color: $blue;
+      }
+
       &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+
       &:active {
-        background: rgba(0, 0, 0, 0.1);
+        color: $active;
       }
     }
   }

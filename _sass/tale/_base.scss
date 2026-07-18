@@ -6,6 +6,7 @@
 html,
 body {
   color: $default-color;
+  background-color: $white;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $default-color;
+  color: inherit;
   font-family: $serif;
   line-height: normal;
   margin-top: 1.5em;
@@ -42,13 +43,30 @@ h6 {
 
  
 .post h1 { /* hero text */
-	text-align: center;
+	text-align: left;
+	font-size: 22px;
+}
+
+.post h2 {
+	font-size: 20px;
 }
 
 
 a {
-  color: $default-color;
+  color: $blue;
   text-decoration: none;
+
+  &:visited {
+    color: $blue;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $active;
+  }
 }
 
 blockquote {

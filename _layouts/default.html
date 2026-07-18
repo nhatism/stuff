@@ -12,5 +12,57 @@
     </main>
 
     {% include footer.html %}
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll("div.highlight").forEach(function(codeBlock) {
+        if (codeBlock.querySelector(".copy-code-btn")) return;
+        
+        var button = document.createElement("button");
+        button.className = "copy-code-btn";
+        button.type = "button";
+        button.ariaLabel = "Copy code to clipboard";
+        
+        button.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+        
+        button.style.position = "absolute";
+        button.style.top = "8px";
+        button.style.right = "8px";
+        button.style.width = "30px";
+        button.style.height = "30px";
+        button.style.display = "flex";
+        button.style.alignItems = "center";
+        button.style.justifyContent = "center";
+        button.style.cursor = "pointer";
+        button.style.background = "transparent";
+        button.style.border = "1px solid #201818";
+        button.style.borderRadius = "3px";
+        button.style.color = "#201818";
+        
+        button.addEventListener("click", function() {
+          var code = codeBlock.querySelector("pre code") || codeBlock.querySelector("pre") || codeBlock;
+          var text = code.innerText || code.textContent;
+          
+          var table = codeBlock.querySelector("table");
+          if (table) {
+            var codeTd = table.querySelector("td.code");
+            if (codeTd) {
+              text = codeTd.innerText || codeTd.textContent;
+            }
+          }
+          
+          navigator.clipboard.writeText(text).then(function() {
+            button.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+            setTimeout(function() {
+              button.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+            }, 1000);
+          }, function(err) {
+            console.error("Failed to copy code: ", err);
+          });
+        });
+        
+        codeBlock.appendChild(button);
+      });
+    });
+    </script>
   </body>
 </html>

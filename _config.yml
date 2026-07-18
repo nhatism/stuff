@@ -1,13 +1,13 @@
 # Site settings
-title:          Nhatism
+title:          nhatism's stuff
 description:    ""
-baseurl:        "/blog"
+baseurl:        "/stuff"
 url:            "https://nhatism.github.io"
 
 
 # Author
 author:
-  name:         Nhatism
+  name:         nhatism
   url:          https://nhatism.github.io
   email:        
 
@@ -33,7 +33,7 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       10
+paginate:       36
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]

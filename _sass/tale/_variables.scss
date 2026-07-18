@@ -1,20 +1,26 @@
 // Colors
-$default-color: #222 !default;
-$default-shade: #353535 !default;
-$default-tint: #e5e5e5 !default;
-$grey-1: #666 !default;
-$grey-2: #ddd !default;
-$grey-3: #fafafa !default;
-$white: #fff !default;
-$blue: #4a9ae1 !default;
-$shadow-color: rgba(0, 0, 0, .2) !default;
+$bg: #ffffff;
+$text: #201818;
+$link: #000088;
+$active: #ff0000;
+$muted: $text;
+
+$default-color: $text !default;
+$default-shade: $text !default;
+$default-tint: $text !default;
+$grey-1: $text !default;
+$grey-2: $text !default;
+$grey-3: #f7f7f7 !default;
+$white: $bg !default;
+$blue: $link !default;
+$shadow-color: transparent !default;
 $code-color: #d14 !default;
-$my-red: #222 !default; // Simplified heading color
-$my-purple: #666699 !default;
+$my-red: $active !default;
+$my-purple: $link !default;
 
 // Fonts
-$serif: "Inter", serif !default;
-$sans-serif: "Inter", sans-serif !default;
+$serif: "TeX Gyre Pagella", "Palatino Linotype", Palatino, Georgia, serif !default;
+$sans-serif: "TeX Gyre Pagella", "Palatino Linotype", Palatino, Georgia, serif !default;
 $monospaced: "DMMono", monospace !default;
 
 @mixin box-sizing($type: border-box) {
@@ -24,7 +30,5 @@ $monospaced: "DMMono", monospace !default;
 }
 
 @mixin transition($args...) {
-  -webkit-transition: $args;
-     -moz-transition: $args;
-          transition: $args;
+  // Disabled transitions for minimal early-web aesthetic
 }
