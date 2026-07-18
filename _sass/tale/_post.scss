@@ -35,6 +35,19 @@
     text-align: justify;
   }
 
+  ul, ol {
+    margin-bottom: 0.8rem;
+    
+    ul, ol {
+      margin-top: 0.4rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+
   a {
     color: $blue;
     text-decoration: none;
