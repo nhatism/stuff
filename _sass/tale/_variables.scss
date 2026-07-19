@@ -21,7 +21,7 @@ $my-purple: $link !default;
 // Fonts
 $serif: serif !default;
 $sans-serif: serif !default;
-$monospaced: "DMMono", monospace !default;
+$monospaced: monospace !default;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
