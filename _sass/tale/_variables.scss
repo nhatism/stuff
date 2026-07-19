@@ -19,8 +19,8 @@ $my-red: $active !default;
 $my-purple: $link !default;
 
 // Fonts
-$serif: "TeX Gyre Pagella", "Palatino Linotype", Palatino, Georgia, serif !default;
-$sans-serif: "TeX Gyre Pagella", "Palatino Linotype", Palatino, Georgia, serif !default;
+$serif: serif !default;
+$sans-serif: serif !default;
 $monospaced: "DMMono", monospace !default;
 
 @mixin box-sizing($type: border-box) {
